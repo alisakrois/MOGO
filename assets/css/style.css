@@ -845,3 +845,110 @@
         margin: 15px auto 0px;
         background-color: #f38181;
     }
+    /* Footer */
+    
+    .footer {
+        padding-top: 65px;
+        background-color: #f8f8f8;
+    }
+    
+    .footer__inner {
+        display: flex;
+        padding-bottom: 65px;
+    }
+    
+    .footer__logo {
+        margin-bottom: 30px;
+        font-size: 46px;
+        font-weight: 700;
+        color: #ccc;
+    }
+    
+    .footer__text {
+        margin-bottom: 30px;
+        font-size: 15px;
+        color: #999;
+    }
+    
+    .footer__social-header {
+        padding-bottom: 15px;
+        font-size: 14px;
+        color: #333;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    
+    .footer__social-header b {
+        font-size: 18px;
+    }
+    
+    .footer__social-content {
+        margin-bottom: 25px;
+        padding-top: 15px;
+        font-size: 15px;
+        color: #999;
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    .footer__social-content a {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        font-size: 18px;
+        color: #95e1d3;
+    }
+    /* Subscribe */
+    
+    .subscribe {
+        width: 100%;
+        max-width: 380px;
+        display: flex;
+    }
+    
+    .subscribe__input {
+        width: 60%;
+        height: 40px;
+        padding: 12px;
+        background-color: #fff;
+        border: 1px solid #e7e7e7;
+        border-right: 0;
+        font-size: 15px;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        font-weight: 300;
+        color: #333;
+        line-height: 1.1;
+    }
+    
+    .subscribe__input::placeholder {
+        color: #ccc;
+    }
+    
+    .subscribe__input:focus {
+        outline: 0;
+        border-color: #74c7b8;
+    }
+    
+    .subscribe__btn {
+        width: 40%;
+        padding: 12px 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        height: 40px;
+        background-color: #95e1d3;
+        border: 0;
+        cursor: pointer;
+        line-height: 1.1;
+        transition: background-color .2s linear;
+    }
+    
+    .subscribe__btn:hover {
+        background-color: #74c7b8;
+    }
+    
+    .subscribe__btn:focus {
+        outline: 0;
+    }
