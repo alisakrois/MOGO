@@ -362,6 +362,7 @@
     
     .stat {
         display: flex;
+        flex-wrap: wrap;
     }
     
     .stat__item {
@@ -391,14 +392,19 @@
     
     .services {
         display: flex;
+        flex-wrap: wrap;
     }
     
     .services__item {
         font-family: 'Roboto', sans-serif;
-        flex: 1 1 0;
-        padding-left: 85px;
-        padding-right: 35px;
+        width: 33.33333%;
+        padding: 0 35px 40px 85px;
         position: relative;
+        margin-bottom: 40px;
+    }
+    
+    .services__item--border {
+        border-bottom: 1px solid #e5e5e5;
     }
     
     .services__icon {
@@ -430,6 +436,8 @@
     
     .devices__item {
         display: block;
+        max-width: 100%;
+        height: auto;
     }
     
     .devices__item--iphone {
@@ -442,10 +450,19 @@
     
     .wedo {
         display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
     }
     
     .wedo__item {
         width: 50%;
+        padding: 0 15px;
+    }
+    
+    .wedo__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
     }
     /* Accordion */
     
@@ -1063,6 +1080,27 @@
         .intro__suptitle {
             font-size: 32px;
         }
+        /* Stat */
+        .stat {
+            justify-content: center;
+        }
+        .stat__item {
+            flex: none;
+            width: 33.33333%;
+            border: 0;
+            padding: 30px 25px;
+        }
+        .stat__item:last-child {
+            border-right: 0;
+        }
+        /* Services */
+        .services__item {
+            width: 50%;
+            padding-bottom: 0;
+        }
+        .services__item--border {
+            border-bottom: 0;
+        }
     }
     
     @media (max-width: 770px) {
@@ -1073,6 +1111,9 @@
         /* Section */
         .section {
             padding: 40px 0;
+        }
+        .section--devices {
+            padding-bottom: 0;
         }
         /* Slider */
         .slider__text {
@@ -1093,6 +1134,26 @@
         }
         .card__item:last-child {
             margin-bottom: 0;
+        }
+        /* Services */
+        .services {
+            justify-content: center;
+        }
+        .services__item {
+            width: 100%;
+            max-width: 400px;
+            padding-left: 55px;
+            padding-right: 0;
+        }
+        .services__icon {
+            left: 0;
+        }
+        /* Wedo */
+        .wedo__img {
+            display: none;
+        }
+        .wedo__item {
+            width: 100%;
         }
     }
     
@@ -1116,5 +1177,25 @@
         }
         .section__title::after {
             margin: 20px auto;
+        }
+        /* Stat */
+        .stat__item {
+            width: 100%;
+            border-bottom: 1px solid #b5eae0;
+        }
+        .stat__item:last-child {
+            border-bottom: 0;
+        }
+        .stat__count {
+            font-size: 52px;
+        }
+        /* Devices */
+        .devices {
+            max-width: 320px;
+        }
+        .devices__item--iphone {
+            width: 180px;
+            bottom: -50px;
+            right: -80px;
         }
     }
